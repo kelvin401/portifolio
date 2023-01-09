@@ -106,3 +106,30 @@ footer p {
 a {
   color: rgb(32, 179, 18);
 }
+
+@media (max-width: 600px) {
+  html {
+    font-size: 130%;
+    /* 1rem to equal 10px */
+  }
+
+  main,
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  section {
+    height: 100%;
+  }
+
+  .buttons-grid button {
+    height: 3rem;
+    font-size: .8rem;
+  }
+
+}
